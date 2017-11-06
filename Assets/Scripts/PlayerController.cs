@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+	private Rigidbody rb;
+
 	// Use this for initialization
 	void Start () {
-		
+		rb = GetComponent<Rigidbody> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		//most of the game code goes here
 	}
+
+	void FixedUpdate () {
+		// physics code goes here
+
+		float moveHorizontal = Input.GetAxis ("Horizontal"); 
+		float moveVertical = Input.GetAxis ("Vertical");
+
+
+	}
+
 }
